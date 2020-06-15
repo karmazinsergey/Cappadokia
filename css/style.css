@@ -1,0 +1,301 @@
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "balqis";
+    src: url("..//fonts/balqis.woffs2") format("woff2"), url("..//fonts/balqis.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: url("..//fonts/RobotoCondensed-Light.woff2") format("woff2"), url("..//fonts/RobotoCondensed-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed-LightItalic";
+    src: url("..//fonts/RobotoCondensed-LightItalic.woff2") format("woff2"), url("..//RobotoCondensed-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url("..//fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("..//fonts/RobotoCondensed-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    color: #000;
+    font-family: "RobotoCondensed-Light";
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-section {
+    margin: 200px auto;
+    max-width: 1920px;
+}
+
+.title {
+    font-family: "balqis";
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 128px;
+    color: #e2ab3f;
+    margin-bottom: 100px;
+}
+
+.title span {
+    font-family: "RobotoCondensed-LightItalic";
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    display: block;
+    margin-top: -30px;
+}
+
+
+/* ?HEADER */
+
+.header {
+    height: 100vh;
+    background-image: url("../images/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.header__top {
+    font-family: "RobotoCondensed-Regular";
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.menu__list-item {
+    display: inline-block;
+}
+
+.menu__list-link:hover {
+    text-decoration: underline;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 52px;
+}
+
+.header__phone {
+    padding-left: 40px;
+    position: relative;
+}
+
+.header__phone::before {
+    content: "";
+    position: absolute;
+    background-image: url("..//images/header_phone.svg");
+    height: 30px;
+    width: 30px;
+    left: 0;
+}
+
+.header__title {
+    padding-top: 152px;
+    text-align: center;
+    font-family: "balqis";
+    font-size: 250px;
+    font-weight: 300;
+    line-height: 334px;
+}
+
+.header__title span {
+    display: block;
+    text-align: right;
+    font-family: "RobotoCondensed-LightItalic";
+    font-size: 56px;
+    line-height: 66px;
+    margin-top: -70px;
+    margin-right: 85px;
+}
+
+
+/* ?Fairy tail */
+
+.fairy-tail__title span {
+    margin-left: 185px;
+}
+
+.fairy-tail__slider {
+    width: 50%;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.fairy-tail__inner {
+    position: relative;
+}
+
+.fairy-tail__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.fairy-tail__body {
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fairy-tail__body-title {
+    font-family: "RobotoCondensed-Regular";
+}
+
+.fairy-tail__text {
+    padding: 10px 0;
+}
+
+
+/* ?Our Trip */
+
+.our-trip__slider {
+    width: 50%;
+    margin-left: auto;
+}
+
+.our-trip__inner {
+    position: relative;
+}
+
+.our-trip__content {
+    width: 50%;
+    padding-right: 55px;
+}
+
+.our-trip__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.our-trip__title span {
+    margin-left: 240px;
+}
+
+.our-trip__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.our-trip__list {
+    margin: 5px 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.our-trip__list li:first-child {
+    margin-bottom: 20px;
+    font-family: "RobotoCondensed-Regular";
+}
+
+.our-trip__btn {
+    font-family: "RobotoCondensed-Light";
+    font-size: 24px;
+    line-height: 28px;
+    border: solid 1px #e2ab3f;
+    padding: 11px 54px;
+}
+
+
+/* ?Hotel */
+
+.hotel__title span {
+    margin-left: 120px;
+}
+
+.hotel__inner {
+    display: flex;
+}
+
+.hotel__images {
+    margin-right: 100px;
+}
+
+.hotel__text {
+    margin-bottom: 20px;
+}
+
+.hotel__gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel__gallery a {
+    margin-top: 50px;
+}
